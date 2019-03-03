@@ -1,0 +1,80 @@
+html {
+	position: relative;
+	min-height: 100%;
+}
+body {
+	margin-bottom: 60px;
+}
+
+body,
+.jumbotron,
+.footer {
+	background-color: #333;
+}
+
+.navigate {
+	min-width: 100px;
+}
+ul {
+	list-style: none;
+}
+label,
+header a,
+.imgBlock img,
+.imgBlock a {
+	cursor: pointer;
+}
+
+input:checked + label {
+	font-weight: bold;
+}
+
+.imgBlock img {
+	width: 66%;
+}
+
+header a,
+.lblSelection a {
+	text-decoration: none;
+	color: #def3f9;
+	transition: 0.3s ease-in-out;
+}
+
+header:hover a,
+.imgBlock:hover a {
+	color: #7095a1;
+	text-decoration: none;
+	transform: scale(1.5);
+}
+
+header:active a,
+.imgBlock:active a {
+	color: #597d88;
+	transform: scale(1.5);
+}
+
+.hidden {
+	display: none;
+}
+
+.progress {
+	height: 3px;
+}
+.footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 60px;
+}
+
+.footer p {
+	margin-top: 1rem;
+}
+
+.imgBlock img {
+	filter: grayscale(100%);
+	transition: 0.3s ease-in-out;
+}
+.imgBlock:hover img {
+	filter: grayscale(0%);
+}
